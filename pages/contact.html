@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <section>
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value=""> Selecione um estado </option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </div>
+
+            <div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                </div>
+                <div>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" maxlength="10"></textarea>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Limpar Formulario">
+            </div>
+
+            <!-- <input type="checkbox" name="EN" value="ingles">EN
+            <input type="checkbox" name="PT">PT
+            <input type="checkbox" name="ES">ES -->
+        </form>
+
+
+        <!-- <a href="menu.html" target="alvo">menu</a>
+        <br>
+        <iframe src="../index.html" frameborder="1" name="alvo"></iframe> -->
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69404.16313390787!2d-46.68737663891345!3d-23.57345650880828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d1cd341e75%3A0x646ff4a75c6b0493!2sAv.%20Nove%20de%20Julho%2C%20S%C3%A3o%20Paulo%20-%20SP!5e1!3m2!1sen!2sbr!4v1784770600126!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+</body>
+</html>
