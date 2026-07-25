@@ -1,0 +1,53 @@
+:root {
+    --cor-fonte: #515643;
+    --tamanho-fonte: 20px;
+}
+
+a {
+    color: #52ca08;
+}
+
+/* a:hover {
+   color: #b30101; 
+   text-decoration: none;
+} */
+
+a:active {
+   color: #0400ff;
+}
+
+a:focus {
+    background-color: #596144;
+}
+
+p:hover {
+   color: #755a01; 
+   text-decoration: underline;
+}
+
+div:target {
+    background-color: gold;
+    border: solid 1px #000;
+}
+
+p:target {
+  background-color: gold;
+}
+
+.acesso {
+    color: #755a01;
+}
+
+.seta {
+    text-decoration: none;
+}
+
+.seta::after {
+    content: " >";
+}
+
+.seta:hover::after {
+    content: " >";
+    color: #b30101;
+    padding-left: 10px;
+}

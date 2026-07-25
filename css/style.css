@@ -1,22 +1,18 @@
-:root {
-    --cor-fonte: #515643;
-    --tamanho-fonte: 20px;
-}
-
 * {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 
 html {
     font-size: var(--tamanho-fonte);
 }
 
-ul.first-menu {
+ul.sub-menu {
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .nav {
@@ -25,10 +21,10 @@ ul.first-menu {
 
 .menu {
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding: 15px 15px;
 }
 
 .container {
@@ -48,4 +44,19 @@ a {
 .logo {
     font-size: 1.6em;
     color: var(--cor-fonte);
+}
+
+header {
+    background-image: url(../images/Full-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    background-position: top center;
+    color: var(--cor-fonte);
+    padding: 10% 5%;
+    /* min-height: 500px; */
+}
+
+h1 {
+    width: 29%;
 }
