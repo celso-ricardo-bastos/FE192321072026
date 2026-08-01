@@ -4,56 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* .btn-primary {
+            background-color: blueviolet;
+        }
+
+        .btn-primary:hover {
+            background-color: aquamarine;
+        } */
+    </style>
 </head>
 <body>
-    <section>
-        <h1>Contact Us</h1>
-        <form action="submit_form.php" method="post">
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-            </div>
+    <section class="fdsfsd" data-cibo-title="teste dfsadfsdfasdfasdf">
+        <div class="container">
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+            </button>
 
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-
-            <div>
-                <label for="estado">Estado:</label>
-                <select name="estado" id="estado">
-                    <option value=""> Selecione um estado </option>
-                    <option value="SP">São Paulo</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="MG">Minas Gerais</option>
-                </select>
-            </div>
-
-            <div>
-                <div>
-                    <label for="mensagem">Mensagem:</label>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div>
-                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" maxlength="10"></textarea>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                    <button type="button" class="btn btn-primary">Logar</button>
+                </div>
                 </div>
             </div>
-
-            <div>
-                <input type="submit" value="Enviar Formulario">
-                <input type="reset" value="Limpar Formulario">
             </div>
 
-            <!-- <input type="checkbox" name="EN" value="ingles">EN
-            <input type="checkbox" name="PT">PT
-            <input type="checkbox" name="ES">ES -->
-        </form>
 
+            <h1 class="text-start text-lg-center">Contact Us</h1>
+            <form action="submit_form.php" method="post">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                </div>
 
-        <!-- <a href="menu.html" target="alvo">menu</a>
-        <br>
-        <iframe src="../index.html" frameborder="1" name="alvo"></iframe> -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input class="form-control" type="email" id="email" name="email">
+                </div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69404.16313390787!2d-46.68737663891345!3d-23.57345650880828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d1cd341e75%3A0x646ff4a75c6b0493!2sAv.%20Nove%20de%20Julho%2C%20S%C3%A3o%20Paulo%20-%20SP!5e1!3m2!1sen!2sbr!4v1784770600126!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div>
+                    <label for="estado" class="form-label">Estado:</label>
+                    <select name="estado" id="estado" class="form-control">
+                        <option value=""> Selecione um estado </option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <div>
+                        <label for="mensagem"  class="form-label">Mensagem:</label>
+                    </div>
+                    <div>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" cols="50" maxlength="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="col-2">
+                        <input type="submit" value="Enviar Formulario" class="btn btn-primary">
+                    </div>
+                    <div class="col-3">
+                        <input type="reset" value="Limpar Formulario" class="btn btn-primary">
+                    </div>
+                </div>
+
+                <div class="d-flex ">
+                    <div>test 1</div>
+                    <div>test 2</div>
+                    <div>test 3</div>
+                </div>
+
+                <!-- <input type="checkbox" name="EN" value="ingles">EN
+                <input type="checkbox" name="PT">PT
+                <input type="checkbox" name="ES">ES -->
+            </form>
+            <div class="card" style="width: 18rem;">
+                <img src="../images/team-photo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+            <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69404.16313390787!2d-46.68737663891345!3d-23.57345650880828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d1cd341e75%3A0x646ff4a75c6b0493!2sAv.%20Nove%20de%20Julho%2C%20S%C3%A3o%20Paulo%20-%20SP!5e1!3m2!1sen!2sbr!4v1784770600126!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
     </section>
+<!-- <a href="menu.html" target="alvo">menu</a>
+<br>
+<iframe src="../index.html" frameborder="1" name="alvo"></iframe> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 </html>

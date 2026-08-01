@@ -9,20 +9,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/format-font.css">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/impressao.css" media="print">
     </head>
     <body>
         <!-- Conteúdo de seccionamento -->
-         <nav class="nav">
-            <div class="container">
+          <nav class="nav">
+            <div class="cibo-container">
                 <div class="menu">
                     <ul class="sub-menu">
-                        <li>
-                            <img class="hamburger" src="images/charm_menu-hamburger.png" width="40" height="40" alt="menu">
+                        <li class="item btn-hamburger">
+                            <img id="imgh" data-js="imagem" class="item hamburger" src="images/charm_menu-hamburger.png" width="40" height="40" alt="menu">
                         </li>
-                        <li> 
+                        <li class="item page"> 
                             <a href="pages/menu.html">Menu</a>
                         </li>
-                        <li> 
+                        <li class="item team"> 
                             <a href="#" class="item">Team</a>
                         </li>
                     </ul>
@@ -30,13 +31,13 @@
                         Cibo gustos
                     </div>
                     <ul class="sub-menu">
-                        <li> 
+                        <li class="item events"> 
                             <a href="pages/menu.html">Events</a>
                         </li>
-                        <li> 
+                        <li class="item contact"> 
                             <a href="pages/contact.html">Contact</a>
                         </li>
-                        <li> 
+                        <li class="item lang"> 
                             <a href="#">EN</a>
                         </li>
                     </ul>
@@ -45,33 +46,76 @@
          </nav>
 
          <header>
-            <div class="container">
+            <div class="cibo-container">
                 <div class="main">
-                    <h1>Made by Italians. Enjoyed by Everyone.</h1>
+                    <h1>
+                        <div>Made by Italians.</div> 
+                        <div>Enjoyed by Everyone.</div>
+                    </h1>
                 </div>
             </div>
          </header>
 
          <section>
-            <div class="quemsomos">
-                <h2>Who are we?</h2>
-            </div>
-
-            <div class="quemsomos">
-                <p class="oswald">
-                    Vulputate in elit tincidunt elit scelerisque massa fusce pharetra. Sagittis gravida lacus quisque dictum non pretium suspendisse porttitor. Risus adipiscing semper ornare velit. Sagittis consequat luctus leo arcu. Aenean nunc accumsan id maecenas. Tortor urna cum platea vitae.
-                </p>
-                <a href="#" class="d"> Display</a>
-                <a href="#" class="d"> Display</a>
+            <div class="cibo-container">
+                <div class="quemsomos">
+                    <h2>Who are we?</h2>
+                </div>
+    
+                <div class="quemsomos">
+                    <p class="oswald">
+                        Vulputate in elit tincidunt elit scelerisque massa fusce pharetra. Sagittis gravida lacus quisque dictum non pretium suspendisse porttitor. Risus adipiscing semper ornare velit. Sagittis consequat luctus leo arcu. Aenean nunc accumsan id maecenas. Tortor urna cum platea vitae.
+                    </p>
+                </div>
             </div>
          </section>
 
-         <section>
+         <section class="ourteam">
+            <div class="cibo-container">
+                
+                <h2>Our Team</h2>
+                <p>In velit auctor non auctor in. Id pellentesque facilisis at lectus sed in sit tellus mauris.</p>
+                <hr>
+                <!-- <div class="row">
+                    <div class="john col-sm-6 col-md-3">
+                        <div class="card">
+                            <div>
+                                <img src="images/team-photo.png" alt="">
+                            </div>
+                            <h3>Johnathan Demario</h3>
+                            <p>In velit auctor non auctor in. Id pellentesque facilisis at lectus sed in sit tellus mauris.</p>
+                        </div>
+                    </div>
+
+                    <div class="bryan col-sm-6 col-md-3">
+                        <img src="images/team-photo.png" alt="">
+                    </div>
+
+                    <div class="aciam col-sm-6 col-md-3">
+                        <img src="images/team-photo.png" alt="">
+                    </div>
+
+                    <div class="putin col-sm-6 col-md-3">
+                        <img src="images/team-photo.png" alt="">
+                    </div>
+                </div> -->
+
+                <!-- <div class="caixa-cards linha">
+                    <div class="card1 coluna coluna-sm-6 coluna-md-3">Lorem ipsum dolor sit amet.</div>
+                    <div class="card2 coluna coluna-sm-6 coluna-md-3">Lorem ipsum dolor sit amet.</div>
+                    <div class="card2 coluna coluna-sm-6 coluna-md-3">Lorem ipsum dolor sit amet.</div>
+                    <div class="card2 coluna coluna-sm-6 coluna-md-3">Lorem ipsum dolor sit amet.</div>
+                    <div class="teste coluna">Lorem ipsum dolor sit amet.</div>
+                </div> -->
+            </div>
          </section>
 
          <footer>
              
          </footer>
+         <!-- <script src="js/introducao.js"></script> -->
+         <!-- <script src="js/objeto-personalizado.js"></script> -->
+        <script src="js/dom.js"></script>
     </body>
 </html>
 
