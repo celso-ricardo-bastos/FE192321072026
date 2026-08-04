@@ -290,7 +290,7 @@ div[class*=coluna] {
 
 
 /* >= 768px md */
-@media  screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .coluna-md-1 {
         width: calc(var(--calc-media) * 1);
     }
@@ -307,6 +307,14 @@ div[class*=coluna] {
     .coluna-md-12 {width: calc(var(--calc-media) * 12);}
 }
 
-.borda {
-    border: #5202ff 2px solid;
+.logo {
+    transition: transform 300ms;
 }
+
+.logo.ativa{
+    transform: rotate(180deg);
+}
+
+/* .logo-aumentado {
+    font-size: 35px;
+} */
