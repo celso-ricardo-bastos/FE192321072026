@@ -1,4 +1,5 @@
 (function() {
-    ItemMenu('[data-js-active="active"]').init()
-    ItemMenu('.menu2').init();
+    ItemMenu('[data-js-active="active"]')
+    ItemMenu('.menu2', true).init();
+    MenuFooter('.teste', true).init();
 })()

@@ -1,7 +1,10 @@
 (function(menu) {
-    
-    const MenuFooter = function(seletor) {
-        menu.call(this, seletor)
+    const MenuFooter = function(seletor, underline) {
+        menu.call(this, seletor, underline)
+
+        if (!new.target) {
+            return new MenuFooter(seletor, underline);
+        }
     }
     MenuFooter.prototype = Object.create(menu.prototype);
 
@@ -21,8 +24,6 @@
         });
     }
 
-    const mfooter = new MenuFooter('.teste')
-    mfooter.init();
-
+    window.MenuFooter = MenuFooter;
 
 })(window.ItemMenu)
