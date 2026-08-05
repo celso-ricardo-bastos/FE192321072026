@@ -318,3 +318,12 @@ div[class*=coluna] {
 /* .logo-aumentado {
     font-size: 35px;
 } */
+
+.active {
+    border-bottom: #000 solid 2px;
+}
+
+.color {
+    color:#5202ff;
+    font-weight: 900;
+}

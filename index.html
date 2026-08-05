@@ -18,13 +18,13 @@
                 <div class="menu">
                     <ul class="sub-menu">
                         <li class="link-item item btn-hamburger">
-                            <img id="imgh" data-js="imagem" class="item hamburger logo" src="images/charm_menu-hamburger.png" width="40" height="40" alt="menu">
+                            <img id="imgh" data-js-active="active" data-js="imagem" class="sub-item item hamburger logo" src="images/charm_menu-hamburger.png" width="40" height="40" alt="menu">
                         </li>
                         <li class="link-item item page"> 
-                            <a href="pages/menu.html">Menu</a>
+                            <a href="pages/menu.html" data-js-active="active" class="sub-item">Menu</a>
                         </li>
                         <li class="link-item item team"> 
-                            <a href="#" class="item">Team</a>
+                            <a href="#" class="item" data-js-active="active" class="sub-item">Team</a>
                         </li>
                     </ul>
                     <div class="logo" data-js="logo">
@@ -32,13 +32,13 @@
                     </div>
                     <ul class="sub-menu">
                         <li class="item events"> 
-                            <a href="pages/menu.html">Events</a>
+                            <a href="pages/menu.html" class="menu2">Events</a>
                         </li>
                         <li class="item contact"> 
-                            <a href="pages/contact.html">Contact</a>
+                            <a href="pages/contact.html" class="menu2">Contact</a>
                         </li>
                         <li class="item lang"> 
-                            <a href="#">EN</a>
+                            <a href="#" class="menu2">EN</a>
                         </li>
                     </ul>
                 </div>
@@ -111,11 +111,24 @@
          </section>
 
          <footer>
-             
+            <ul class="menu-footer">
+                <li class=""> 
+                    <a href="pages/menu.html" class="teste">Events</a>
+                </li>
+                <li class=""> 
+                    <a href="pages/contact.html" class="teste">Contact</a>
+                </li>
+                <li class=""> 
+                    <a href="#" class="teste">EN</a>
+                </li>
+            </ul>
          </footer>
          <!-- <script src="js/introducao.js"></script> -->
          <!-- <script src="js/objeto-personalizado.js"></script> -->
-        <script src="js/dom.js"></script>
+         <!-- <script src="js/dom.js"></script> -->
+         <script src="js/active-menu.js"></script>
+         <script src="js/active-menu-footer.js"></script>
+         <script src="js/executando-active-menu.js"></script>
     </body>
 </html>
 
