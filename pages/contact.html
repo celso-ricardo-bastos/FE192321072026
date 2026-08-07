@@ -52,15 +52,29 @@
 
 
             <h1 class="text-start text-lg-center">Contact Us</h1>
-            <form action="submit_form.php" method="post">
+            <form id="form-contact" action="http://localhost:3001/form-contato" method="post">
+
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome:</label>
                     <input class="form-control" type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <div class="alert alert-danger" data-js="aviso" style="display: none;">
+
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email:</label>
                     <input class="form-control" type="email" id="email" name="email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="cep" class="form-label">Cep:</label>
+                    <input class="form-control" type="text" id="cep" name="cep" placeholder="Digite o cep">
+                </div>
+
+                <div class="mb-3">
+                    <label for="logradouro" class="form-label">Logradouro:</label>
+                    <input class="form-control" type="text" id="logradouro" name="logradouro" placeholder="Digite o logradouro">
                 </div>
 
                 <div>
@@ -84,31 +98,26 @@
 
                 <div class="mb-3 row">
                     <div class="col-2">
-                        <input type="submit" value="Enviar Formulario" class="btn btn-primary">
+                        <input data-js="submit" type="submit" value="Enviar" class="btn btn-primary">
                     </div>
                     <div class="col-3">
-                        <input type="reset" value="Limpar Formulario" class="btn btn-primary">
+                        <input type="reset" value="Limpar" class="btn btn-primary">
                     </div>
                 </div>
 
-                <div class="d-flex ">
-                    <div>test 1</div>
-                    <div>test 2</div>
-                    <div>test 3</div>
-                </div>
 
                 <!-- <input type="checkbox" name="EN" value="ingles">EN
                 <input type="checkbox" name="PT">PT
                 <input type="checkbox" name="ES">ES -->
             </form>
-            <div class="card" style="width: 18rem;">
+            <!-- <div class="card" style="width: 18rem;">
                 <img src="../images/team-photo.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
-                </div>
+                </div> -->
             <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69404.16313390787!2d-46.68737663891345!3d-23.57345650880828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d1cd341e75%3A0x646ff4a75c6b0493!2sAv.%20Nove%20de%20Julho%2C%20S%C3%A3o%20Paulo%20-%20SP!5e1!3m2!1sen!2sbr!4v1784770600126!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
     </section>
@@ -119,5 +128,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="../js/contact-form.js"></script>
 </body>
 </html>

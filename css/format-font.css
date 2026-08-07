@@ -21,10 +21,10 @@ a:focus {
     background-color: #596144;
 }
 
-p:hover {
+/* p:hover {
    color: #755a01; 
    text-decoration: underline;
-}
+} */
 
 div:target {
     background-color: gold;
